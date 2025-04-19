@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <style>
+        h1 {
+            text-align: center;
+            color: rgb(4, 4, 26);
+        }
+
+        body {
+            background-color: #e1ecd0;
+            font-family: Arial, sans-serif;
+        }
+
+        .input-pequeño {
+            width: 50px;
+            text-align: center;
+        }
+
+        .input-button {
+            width: 80px;
+            height: 20px;
+            background-color: #bfc5bf;
+            color: rgb(10, 10, 10);
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Formulario Para Solicitud de Soporte</h1>
+    <form action="">
+        <table border="1">
+            <thead>
+                <tr align="center">
+                    <th colspan="2" align="center">Ingrese su solicitud de Apoyo en Linea <br>
+                        En qué podemos ayudarle?</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td colspan="2" align="left">
+                        Fecha de la Solicitud:
+                        <input type="date" name="fechaSolicitud" id="">
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width:50%" ; align="left">Sistema Operativo
+                        <select name="SisOperativo" id="">
+                            <option value="">Seleccione</option>
+                            <option value="">Windows</option>
+                            <option value="">MacOs</option>
+                            <option value="">Linux</option>
+                        </select>
+                    </td>
+                    <td style="width: 50%;" align="left">Navegador
+                        <select name="Navegador" id="">
+                            <option value="">seleccione</option>
+                            <option value="">Google Chrome</option>
+                            <option value="">Mozilla Firefox</option>
+                            <option value="">Safari</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" align="left">Describa en detalle lo sucedido:</td>
+                </tr>
+                <tr>
+                    <td colspan="2" align="left">
+                        <textarea name="Descripcion" id="" cols="40" rows="10"></textarea>
+                        <br>
+                        <label style="font-size: small;" for=""><b>
+                                Por favor sea lo más especifico posible.
+                                Basicamente indiquenos los pasos que causan el problema,
+                                como funciona normalmente y que hace ahora que no funciona.
+                            </b>
+                        </label>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" align="left">Datos de Contacto del Reporte:
+                        <br>
+                        <label for="">Nombre</label>
+                        <input type="text" name="" id="Nombre">
+                        <label for="">Primer Apellido:</label>
+                        <input type="text" name="" id="Apellido1">
+                        <label for="">Segundo Apellido:</label>
+                        <input type="text" name="" id="Apellido2">
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" align="left">Dónde se tropezó con el problema?
+                        <h6 align="left">
+                            Indiquenos donde ocurrió el problema:
+                        </h6>
+                        <input type="radio" name="Programa" id="">
+                        <label for="">Programa</label>
+                        <br>
+                        <input type="radio" name="Enlace" id="">
+                        <label for="">Enlace</label>
+                        <br>
+                        <input type="radio" name="Pagina" id="">
+                        <label for="">Página Web</label>
+                        <br>
+                        <input type="radio" name="" id="">
+                        <label for="">Otro</label>
+                        <br>
+                        <label for="part1">N.° de Teléfono</label>
+                        <input id="parte1" type="text" class="input-pequeño" maxlength="3" />-
+                        <input id="parte2" type="text" class="input-pequeño" maxlength="3" />-
+                        <input id="parte3" type="text" class="input-pequeño" maxlength="4" />
+                        <br>
+                        <label for="">Correo Electrónico</label>
+                        <input type="email" name="email" id="">
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" align="center">
+                        <input type="button" class="input-button" value="Enviar" onclick="alert('Formulario Enviado')">
+                        <input type="button" class="input-button" value="borrar" onclick="alert('Formulario Borrado')">
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <label for="">
+                            Si tiene algun problema, Envíenos un correo. <u>Contáctenos</u>
+                        </label>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </form>
+</body>
+
+</html>
